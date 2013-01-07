@@ -1,0 +1,20 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <package name="cerrarSesion" extends="default" namespace="/cerrarSesion">
+        
+        <action name="cerrar" class="actionCerrarSesion" method="inicio">
+            <result name="ok">/servicios/cerrarSesion/cerrarSesion.jsp</result>
+            <result name="input">/servicios/cerrarSesion/cerrarSesion.jsp</result>
+        </action>
+        
+        <action name="cerrarSesion" class="actionCerrarSesion" method="cerrarSesion">
+            <result name="input">/servicios/cerrarSesion/cerrarSesion.jsp</result>
+        </action>
+        
+    </package>
+    
+</struts>

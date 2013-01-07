@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd"
+       default-autowire="byName"
+>
+    
+    <bean name="daoConvocatoria" class="ingswii.quizpro.accesoDatos.dao.impl.DaoConvocatoria">
+    </bean>
+    
+    <bean name="daoServicio" class="ingswii.quizpro.accesoDatos.dao.impl.DaoServicio">
+    </bean>
+    
+    <bean name="daoMenu" class="ingswii.quizpro.accesoDatos.dao.impl.DaoMenu">
+    </bean>
+    
+    <bean name="daoUsuario" class="ingswii.quizpro.accesoDatos.dao.impl.DaoUsuario">
+    </bean>
+    
+    <bean name="daoGrupo" class="ingswii.quizpro.accesoDatos.dao.impl.DaoGrupo">
+    </bean>
+    
+    <bean name="daoPostulante" class="ingswii.quizpro.accesoDatos.dao.impl.DaoPostulante">
+    </bean>
+    
+    <bean name="daoReporte" class="ingswii.quizpro.accesoDatos.dao.impl.DaoReporte">
+    </bean>
+    
+    <bean name="daoIp" class="ingswii.quizpro.accesoDatos.dao.impl.DaoIp">
+    </bean>
+    
+    <bean name="daoTema" class="ingswii.quizpro.accesoDatos.dao.impl.DaoTema">
+    </bean>
+    
+    <bean name="daoExamen" class="ingswii.quizpro.accesoDatos.dao.impl.DaoExamen">
+    </bean>
+    
+    <bean name="daoPregunta" class="ingswii.quizpro.accesoDatos.dao.impl.DaoPregunta">
+    </bean>
+    
+    <bean name="daoDecision" class="ingswii.quizpro.accesoDatos.dao.impl.DaoDecision">
+    </bean>
+    
+    <bean name="daoRespuesta" class="ingswii.quizpro.accesoDatos.dao.impl.DaoRespuesta">
+    </bean>
+    
+    <bean name="daoResultado" class="ingswii.quizpro.accesoDatos.dao.impl.DaoResultado">
+    </bean>
+    
+</beans>

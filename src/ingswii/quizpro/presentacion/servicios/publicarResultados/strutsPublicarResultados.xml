@@ -1,0 +1,20 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <package name="publicarResultados" extends="default" namespace="/publicarResultados">
+        
+        <action name="inicio" class="actionPublicarResultados" method="inicio">
+            <result name="ok">
+                /servicios/publicarResultados/publicarResultados.jsp
+            </result>
+        </action>
+        
+        <action name="publicar" class="actionPublicarResultados" method="publicar">
+        </action>
+        
+    </package>
+    
+</struts>

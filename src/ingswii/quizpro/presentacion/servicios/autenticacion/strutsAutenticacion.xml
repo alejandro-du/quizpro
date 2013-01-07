@@ -1,0 +1,20 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <package name="autenticacion" extends="default" namespace="/autenticacion">
+        
+        <action name="inicio" class="actionAutenticar" method="inicio">
+            <result name="ok">/servicios/autenticacion/formularioAutenticacion.jsp</result>
+            <result name="input">/servicios/autenticacion/formularioAutenticacion.jsp</result>
+        </action>
+        
+        <action name="autenticar" class="actionAutenticar" method="autenticar">
+            <result name="input">/servicios/autenticacion/formularioAutenticacion.jsp</result>
+        </action>
+        
+    </package>
+    
+</struts>

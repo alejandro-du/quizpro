@@ -1,0 +1,48 @@
+
+/* BrainJar Style */
+div.BJ_menuBar, div.BJ_menuElement,
+div.BJ_subMenuBar, div.BJ_subMenuElement {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    color: #222;
+    text-align: left;
+}
+div.BJ_menuBar,
+div.BJ_subMenuBar {
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #3b7687;
+}
+div.BJ_menuBar {
+    padding: 0px 0px;
+}
+div.BJ_menuElement {
+    padding: 2px 6px 2px 6px;
+}
+div.BJ_menuElementHover {
+    background-color: #3b7687;
+    color: #FFFFFF;
+}
+div.BJ_subMenuElement {
+    padding: 3px 10px 3px 10px;
+    margin: 0 1px 1px 0;
+}
+div.BJ_subMenuElementHover {
+    background-color: #3b7687;
+    color: #FFFFFF;
+}
+div.BJ_subMenuElementHeading {
+    font-weight: bold;
+}
+div.BJ_menuElementHover {
+    border-color: #e0b090 #906040 #906040 #e0b090;
+}
+div.BJ_menuElementActive {
+    background-color: #3b7687;
+    color: #FFFFFF;
+    border-color: #906040 #e0b090 #e0b090 #906040;
+}
+div.hr {
+    border-top: 1px solid #906040;
+    border-bottom: 1px solid #e0b090;
+}

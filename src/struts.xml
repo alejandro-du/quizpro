@@ -1,0 +1,104 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <!-- Archivos XML a incluir. Agragar acá los nuevos archivos con definición de actions -->
+    <include file="ingswii/quizpro/presentacion/servicios/seleccionarConvocatoria/strutsSeleccionarConvocatoria.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/autenticacion/strutsAutenticacion.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/administrarUsuarios/strutsAdministrarUsuarios.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/administrarGrupos/strutsAdministrarGrupos.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/administrarServicios/strutsAdministrarServicios.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/administrarMenus/strutsAdministrarMenus.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/administrarConvocatorias/strutsAdministrarConvocatorias.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/administrarReportes/strutsAdministrarReportes.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/administrarPostulantes/strutsAdministrarPostulantes.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/administrarIps/strutsAdministrarIps.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/administrarTemas/strutsAdministrarTemas.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/administrarExamenes/strutsAdministrarExamenes.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/administrarPreguntas/strutsAdministrarPreguntas.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/cerrarSesion/strutsCerrarSesion.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/inscripcion/strutsRealizarInscripcion.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/actualizarDatos/strutsActualizarDatos.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/reportes/strutsReportes.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/presentarExamen/strutsPresentarExamen.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/asignarExamenAConvocatoria/strutsAsignarExamenAConvocatoria.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/publicarResultados/strutsPublicarResultados.xml" />
+    <include file="ingswii/quizpro/presentacion/servicios/consultarResultados/strutsConsultarResultados.xml" />
+    
+    <!-- Paquete "base" -->
+    <package name="default" extends="struts-default" namespace="/">
+        
+        <interceptors>
+            
+            <interceptor-stack name="quizProInterceptorStack">
+                
+                <interceptor-ref name="prepare"/>
+                <interceptor-ref name="debugging"/>
+                <interceptor-ref name="params" />
+                <interceptor-ref name="checkbox"/>
+                <interceptor-ref name="basicStack"/>
+                <interceptor-ref name="validation">
+                    <param name="excludeMethods">inicio</param>
+                </interceptor-ref>
+                <interceptor-ref name="workflow"/>
+                <interceptor-ref name="autowiring" />
+                
+            </interceptor-stack>
+            
+        </interceptors>
+        
+        <default-interceptor-ref name="quizProInterceptorStack" />
+        
+        
+        <global-results>
+            
+            <!-- entrada a la aplicación -->
+            <result name="index">/</result>
+            
+            <!-- muestra un mensaje estándar -->
+            <result name="mensaje">/comun/mensaje.jsp</result>
+            
+            <!-- muestra mensaje de error -->
+            <result name="error">/comun/error.jsp</result>
+            
+        </global-results>
+
+    </package>
+    
+    
+    <!-- paquete para CRUDs -->
+    <package name="crud" extends="default" namespace="/">
+
+        <action name="formulario_*" class="action_{1}" method="formulario">
+            <result name="formulario">/servicios/{1}/formulario.jsp</result>
+        </action>
+        
+        <action name="buscar_*" class="action_{1}" method="buscar">
+            <result name="lista">/servicios/{1}/lista.jsp</result>
+        </action>
+        
+        <action name="crear_*" class="action_{1}" method="crear">
+            <result name="formulario">/servicios/{1}/formulario.jsp</result>
+            <result name="input">/servicios/{1}/formulario.jsp</result>
+        </action>
+        
+        <action name="modificar_*" class="action_{1}" method="modificar">
+            <result name="formulario">/servicios/{1}/formulario.jsp</result>
+            <result name="input">/servicios/{1}/formulario.jsp</result>
+        </action>
+        
+        <action name="eliminar_*" class="action_{1}" method="eliminar">
+            <result name="lista">/servicios/{1}/lista.jsp</result>
+            <result name="formulario">/servicios/{1}/formulario.jsp</result>
+        </action>
+        
+        <action name="ver_*" class="action_{1}" method="ver">
+            <result name="formulario">/servicios/{1}/formulario.jsp</result>
+        </action>
+        
+    </package>
+    
+
+</struts>

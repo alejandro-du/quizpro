@@ -1,0 +1,159 @@
+/* 
+Author     : Royal Art Museum.
+Description: Estilos de Royal Art Museum.
+*/
+
+.errorMessage, .required {
+    font-family: "Arial Narrow", "Myriad Pro";
+    font-size: 10pt;
+    color: #cc0000;
+}
+
+input, select, textarea {
+    border: 1px solid #bbb;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: #f1f7f8;
+}
+
+input:hover, select:hover, textarea:hover {
+    border-color: #3b7687;
+}
+
+.nota {
+    font-family: "Arial Narrow", "Myriad Pro";
+    font-size: 10pt;
+    border: 1px dotted #3b7687;
+    background-color: #e6f8b9;
+    color: #3b7687;
+    padding: 5px;
+}
+
+table {
+    color: #444444;
+    font-family: "Georgia";
+    font-size: 15px;
+}
+
+table.ram {
+    color: #444444;
+    font-family: "Georgia";
+    font-size: 15px;
+    border: 1px solid #bbb;
+}
+
+table.ram td {
+    padding: 6px 12px 6px 12px;
+}
+
+body  {
+    background: #F4F4F4;
+    margin: 0;
+}
+
+#container {
+    
+    width: 90%;
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+
+#header { 
+    padding: 45px 0 15px 40px;
+} 
+
+#header a {
+    color: #121212;
+    text-decoration: none;
+    font-size: 30px; 
+    font-family: "Myriad Pro", "Arial Narrow";
+}
+
+.convocatoria {
+    font-family: "Arial Narrow", "Myriad Pro";
+    font-size: 10pt;
+    color: #444444;
+    padding: 5px;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+#menu {
+    background-color: #3b7687;
+    padding: 0px 0 0px 0px;
+}
+
+#menu a {
+    color: #c5d6db;
+    text-decoration: none; 
+    font-size: 14px; 
+    font-family: "Arial Narrow", "Myriad Pro";
+}
+
+#menu a:hover {
+    color: #ecf2f3;
+}
+
+#sidebar {
+    float: left;
+    width: 120px;
+    padding: 30px 0 0 40px;
+    margin: 0;
+}
+
+h1 {
+    margin: 0px;
+    color: #869843; 
+    font-size:24px; 
+    font-family: "Arial Narrow", "Myriad Pro"; 
+    font-weight: normal;
+}
+
+h2 {
+    color: #3b7687;
+    font-size: 16px; 
+    margin: 0px;
+}
+
+#main { 
+    margin: 0 0 0 180px;
+    padding: 35px 40px 30px 0;
+    color: #444444;
+    font-family: "Georgia";
+    font-size: 17px;
+    line-height: 18px;
+    text-align: justify;
+} 
+
+#main a {
+    color: #869843; 
+    text-decoration: none;
+}
+
+#main a:hover {
+    color: #3b7687;
+}
+
+#footer {
+    padding: 6px 40px 6px 40px;
+    background: #d6d6d6; 
+    font-family: "Lucida Sans Unicode";
+    color: #444444;
+    font-size: 11px;
+    text-align: right;
+}
+
+#footer a {
+    text-decoration: none; 
+    color: #262626;
+}
+
+#footer a:hover {
+    color: #666666;
+}
+
+.separator {
+    font-size:11px;
+    color:#FFFFFF;
+}

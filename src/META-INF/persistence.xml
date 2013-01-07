@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="quizProPU" transaction-type="RESOURCE_LOCAL">
+    <class>ingswii.quizpro.biz.vo.ugs.Grupo</class>
+    <class>ingswii.quizpro.biz.vo.ugs.Menu</class>
+    <class>ingswii.quizpro.biz.vo.ugs.Servicio</class>
+    <class>ingswii.quizpro.biz.vo.ugs.Usuario</class>
+    <class>ingswii.quizpro.biz.vo.ram.Convocatoria</class>
+    <class>ingswii.quizpro.biz.vo.ram.Postulante</class>
+    <class>ingswii.quizpro.biz.vo.reportes.Reporte</class>
+    <class>ingswii.quizpro.biz.vo.ram.Respuesta</class>
+    <class>ingswii.quizpro.biz.vo.ram.Pregunta</class>
+    <class>ingswii.quizpro.biz.vo.ram.Examen</class>
+    <class>ingswii.quizpro.biz.vo.ram.Tema</class>
+    <class>ingswii.quizpro.biz.vo.ram.Ip</class>
+    <class>ingswii.quizpro.biz.vo.ram.Decision</class>
+    <class>ingswii.quizpro.biz.vo.ram.Resultado</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/quizpro"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+    </properties>
+  </persistence-unit>
+</persistence>

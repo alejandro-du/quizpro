@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd"
+       default-autowire="byName"
+>
+    
+    <bean name="actionSeleccionarConvocatoria"
+          class="ingswii.quizpro.presentacion.servicios.seleccionarConvocatoria.ActionSeleccionarConvocatoria"
+          scope="prototype">
+    </bean>
+    
+    <bean name="actionAutenticar" class="ingswii.quizpro.presentacion.servicios.autenticacion.ActionAutenticacion"
+          scope="prototype">
+    </bean>
+    
+    <bean name="actionCerrarSesion"
+          class="ingswii.quizpro.presentacion.servicios.cerrarSesion.ActionCerrarSesion"
+          scope="prototype">
+    </bean>
+    
+    <bean name="actionRealizarInscripcion"
+          class="ingswii.quizpro.presentacion.servicios.inscripcion.ActionRealizarInscripcion"
+          scope="prototype">
+    </bean>
+    
+    <bean name="action_administrarUsuarios"
+          class="ingswii.quizpro.presentacion.servicios.administrarUsuarios.ActionAdministrarUsuarios"
+          scope="prototype">
+    </bean>
+    
+    <bean name="action_administrarGrupos"
+          class="ingswii.quizpro.presentacion.servicios.administrarGrupos.ActionAdministrarGrupos"
+          scope="prototype">
+    </bean>
+    
+    <bean name="action_administrarServicios"
+          class="ingswii.quizpro.presentacion.servicios.administrarServicios.ActionAdministrarServicios"
+          scope="prototype">
+    </bean>
+    
+    <bean name="action_administrarMenus"
+          class="ingswii.quizpro.presentacion.servicios.administrarMenus.ActionAdministrarMenus"
+          scope="prototype">
+    </bean>
+    
+    <bean name="action_administrarConvocatorias"
+          class="ingswii.quizpro.presentacion.servicios.administrarConvocatorias.ActionAdministrarConvocatorias"
+          scope="prototype">
+    </bean>
+    
+    <bean name="action_administrarReportes"
+          class="ingswii.quizpro.presentacion.servicios.administrarReportes.ActionAdministrarReportes"
+          scope="prototype">
+    </bean>
+    
+    <bean name="action_administrarPostulantes"
+          class="ingswii.quizpro.presentacion.servicios.administrarPostulantes.ActionAdministrarPostulantes"
+          scope="prototype">
+    </bean>
+    
+    <bean name="action_administrarIps"
+          class="ingswii.quizpro.presentacion.servicios.administrarIps.ActionAdministrarIps"
+          scope="prototype">
+    </bean>
+    
+    <bean name="action_administrarTemas"
+          class="ingswii.quizpro.presentacion.servicios.administrarTemas.ActionAdministrarTemas"
+          scope="prototype">
+    </bean>
+    
+    <bean name="action_administrarExamenes"
+          class="ingswii.quizpro.presentacion.servicios.administrarExamenes.ActionAdministrarExamenes"
+          scope="prototype">
+    </bean>
+    
+    <bean name="action_administrarPreguntas"
+          class="ingswii.quizpro.presentacion.servicios.administrarPreguntas.ActionAdministrarPreguntas"
+          scope="prototype">
+    </bean>
+    
+    <bean name="actionActualizarDatos"
+          class="ingswii.quizpro.presentacion.servicios.actualizarDatos.ActionActualizarDatos"
+          scope="prototype">
+    </bean>
+
+    <bean name="actionReportes"
+          class="ingswii.quizpro.presentacion.servicios.reportes.ActionReportes"
+          scope="prototype">
+    </bean>
+
+    <bean name="actionPresentarExamen"
+          class="ingswii.quizpro.presentacion.servicios.presentarExamen.ActionPresentarExamen"
+          scope="prototype">
+    </bean>
+
+    <bean name="actionAsignarExamenAConvocatoria"
+          class="ingswii.quizpro.presentacion.servicios.asignarExamenAConvocatoria.ActionAsignarExamenAConvocatoria"
+          scope="prototype">
+    </bean>
+
+    <bean name="actionPublicarResultados"
+          class="ingswii.quizpro.presentacion.servicios.publicarResultados.ActionPublicarResultados"
+          scope="prototype">
+    </bean>
+
+    <bean name="actionConsultarResultados"
+          class="ingswii.quizpro.presentacion.servicios.consultarResultados.ActionConsultarResultados"
+          scope="prototype">
+    </bean>
+
+</beans>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd"
+       default-autowire="byName"
+>
+    
+    <!-- Bean para el manejo de menús -->
+    <bean name="ctrlMenu" class="ingswii.quizpro.biz.controlador.impl.CtrlMenu">
+    </bean>
+    
+    <bean name="ctrlServicio" class="ingswii.quizpro.biz.controlador.impl.CtrlServicio">
+    </bean>
+    
+    <bean name="ctrlUsuario" class="ingswii.quizpro.biz.controlador.impl.CtrlUsuario">
+    </bean>
+    
+    <bean name="ctrlConvocatoria" class="ingswii.quizpro.biz.controlador.impl.CtrlConvocatoria">
+    </bean>
+    
+    <bean name="ctrlGrupo" class="ingswii.quizpro.biz.controlador.impl.CtrlGrupo">
+    </bean>
+    
+    <bean name="ctrlPostulante" class="ingswii.quizpro.biz.controlador.impl.CtrlPostulante">
+    </bean>
+    
+    <bean name="ctrlReporte" class="ingswii.quizpro.biz.controlador.impl.CtrlReporte">
+    </bean>
+    
+    <bean name="ctrlIp" class="ingswii.quizpro.biz.controlador.impl.CtrlIp">
+    </bean>
+    
+    <bean name="ctrlTema" class="ingswii.quizpro.biz.controlador.impl.CtrlTema">
+    </bean>
+    
+    <bean name="ctrlExamen" class="ingswii.quizpro.biz.controlador.impl.CtrlExamen">
+    </bean>
+    
+    <bean name="ctrlPregunta" class="ingswii.quizpro.biz.controlador.impl.CtrlPregunta">
+    </bean>
+    
+    <bean name="ctrlRespuesta" class="ingswii.quizpro.biz.controlador.impl.CtrlRespuesta">
+    </bean>
+    
+    <bean name="ctrlDecision" class="ingswii.quizpro.biz.controlador.impl.CtrlDecision">
+    </bean>
+    
+    <bean name="ctrlResultado" class="ingswii.quizpro.biz.controlador.impl.CtrlResultado">
+    </bean>
+    
+</beans>

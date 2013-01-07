@@ -1,0 +1,21 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <package name="seleccionarConvocatoria" extends="default" namespace="/seleccionarConvocatoria">
+        
+        <action name="seleccionarConvocatoria" class="actionSeleccionarConvocatoria" method="inicio">
+            <result name="ok">/servicios/seleccionarConvocatoria/seleccionarConvocatoria.jsp</result>
+            <result name="input">/servicios/seleccionarConvocatoria/seleccionarConvocatoria.jsp</result>
+        </action>
+        
+        <action name="establecerConvocatoriaSesion" class="actionSeleccionarConvocatoria" method="establecerConvocatoriaSesion">
+            <result name="input">/servicios/seleccionarConvocatoria/seleccionarConvocatoria.jsp</result>
+            <result name="info">/servicios/seleccionarConvocatoria/info.jsp</result>
+        </action>
+        
+    </package>
+    
+</struts>

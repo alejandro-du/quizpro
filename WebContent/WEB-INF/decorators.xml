@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Author     : Alejandro
+    Description: Decoradores sitemesh.
+-->
+
+<decorators defaultdir="/decoradores">
+    
+    <decorator name="main" page="main.jsp">
+        
+        <pattern>/*.jsp</pattern>
+        <pattern>/*.action</pattern>
+        
+    </decorator>
+    
+</decorators>

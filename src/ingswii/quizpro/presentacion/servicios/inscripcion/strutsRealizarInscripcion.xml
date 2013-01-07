@@ -1,0 +1,20 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <package name="inscripcion" extends="default" namespace="/inscripcion">
+        
+        <action name="inscribir" class="actionRealizarInscripcion" method="inicio">
+            <result name="ok">/servicios/inscripcion/formularioInscripcion.jsp</result>
+            <result name="input">/servicios/inscripcion/formularioInscripcion.jsp</result>
+        </action>
+        
+        <action name="realizarInscripcion" class="actionRealizarInscripcion" method="realizarInscripcion">
+            <result name="input">/servicios/inscripcion/formularioInscripcion.jsp</result>
+        </action>
+        
+    </package>
+    
+</struts>

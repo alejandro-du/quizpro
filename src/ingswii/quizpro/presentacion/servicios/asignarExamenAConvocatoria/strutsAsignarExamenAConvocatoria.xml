@@ -1,0 +1,19 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <package name="asignarExamenAConvocatoria" extends="default" namespace="/asignarExamenAConvocatoria">
+        
+        <action name="inicio" class="actionAsignarExamenAConvocatoria" method="inicio">
+            <result name="ok">/servicios/asignarExamenAConvocatoria/formularioAsignarExamen.jsp</result>
+        </action>
+        
+        <action name="asignar" class="actionAsignarExamenAConvocatoria" method="asignar">
+            <result name="input">/servicios/asignarExamenAConvocatoria/formularioAsignarExamen.jsp</result>
+        </action>
+        
+    </package>
+    
+</struts>

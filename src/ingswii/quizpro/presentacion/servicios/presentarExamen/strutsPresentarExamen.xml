@@ -1,0 +1,26 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <package name="presentarExamen" extends="default" namespace="/presentarExamen">
+        
+        <action name="inicio" class="actionPresentarExamen" method="inicio">
+            <result name="ok">/servicios/presentarExamen/info.jsp</result>
+        </action>
+        
+        <action name="mostrarPregunta" class="actionPresentarExamen" method="mostrarPregunta">
+            <result name="ok">/servicios/presentarExamen/pregunta.jsp</result>
+            <result name="inicio">/servicios/presentarExamen/info.jsp</result>
+            <result name="input">/servicios/presentarExamen/pregunta.jsp</result>
+            <result name="errorP">/servicios/presentarExamen/pregunta.jsp</result>
+        </action>
+        
+        <action name="responder" class="actionPresentarExamen" method="responder">
+            
+        </action>
+        
+    </package>
+    
+</struts>
